@@ -11,7 +11,15 @@ namespace ArraysAndLists
 
             // Create an int Array and populate numbers 1-10
 
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] numbers = new int[11];
+
+            for(int i = 1; i < numbers.Length; i++)
+            {
+                numbers[i] = i;
+                Console.WriteLine(numbers[i]);
+            }
+
+            Console.ReadLine();
 
             /* Create two Lists of type int.
              * Name one List "evens"
@@ -50,10 +58,13 @@ namespace ArraysAndLists
              * Try to be creative in your display
              */
 
+
             foreach(int even in evens)
             {
                 Console.WriteLine(even);
             }
+
+            Console.ReadLine();
 
             foreach(int odd in odds)
             {
